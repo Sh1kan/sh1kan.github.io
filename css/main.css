@@ -2367,7 +2367,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: white;
     color: #010507;
     position: relative;
 }
@@ -2539,7 +2539,7 @@ html.no-csstransitions .home-content__main {
 .s-services {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
-    background-color: #FFFFFF;
+    background-color: black;
     color: #757575;
     position: relative;
 }
@@ -3826,6 +3826,10 @@ h3 {
 
 iframe {
     padding: 0 !important;
+}
+
+.h2--light {
+    color: white;
 }
 
 
