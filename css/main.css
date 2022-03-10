@@ -1434,7 +1434,7 @@ input::-moz-focus-inner {
         font-size: 5rem;
     }
     .display-2 {
-        font-size: 3.3rem;
+        font-size: 3rem;
     }
     .subhead {
         font-size: 1.5rem;
@@ -1446,7 +1446,7 @@ input::-moz-focus-inner {
         font-size: 4.2rem;
     }
     .display-2 {
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 }
 
@@ -2975,7 +2975,7 @@ html.no-csstransitions .home-content__main {
     font-size: 3rem;
     line-height: 1.8;
     color: #555555;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
 }
 
 .clients-testimonials .testimonials__slide {
@@ -2983,8 +2983,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials__avatar {
-    height: 8.4rem;
-    width: 8.4rem;
+    height: 20.4rem;
+    width: 20.4rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
