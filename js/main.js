@@ -214,6 +214,7 @@
             dots: true,
             infinite: true,
             slidesToShow: 3,
+            centerView: true,
             slidesToScroll: 1,
             adaptiveHeight: true,
             //autoplay: true,

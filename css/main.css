@@ -3282,10 +3282,11 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-secondary {
-    width: 35%;
+    text-align: center;
 }
 
-.contact-secondary::before {
+
+/* .contact-secondary::before {
     content: "";
     display: block;
     width: 35%;
@@ -3294,7 +3295,7 @@ html.no-csstransitions .home-content__main {
     bottom: 0;
     right: 0;
     background-color: #121212;
-}
+} */
 
 .contact-secondary .contact-info {
     position: relative;
@@ -3875,10 +3876,6 @@ iframe {
 
 .slick-list {
     height: auto !important;
-}
-
-.slick-slide img:hover {
-    transform: scale(1.5);
 }
 
 
