@@ -7,113 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            position: relative;
-        }
-        
-        video {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .btn {
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        
-        #btns {
-            display: flex;
+        .btn_first {
             position: absolute;
             top: 50%;
-            width: 100%;
-            justify-content: space-evenly;
-        }
-        
-        .btn_first {
-            /* position: absolute; */
-            top: 50%;
-            left: 40%;
-            background-color: #4CAF50;
-            /* Green */
+            left: 15%;
         }
         
         .btn_second {
-            /* position: absolute; */
+            position: absolute;
             top: 50%;
-            right: 40%;
-            background-color: red;
+            right: 55%;
         }
         
         #player {
-            display: flex;
-            justify-content: center;
+            /* pointer-events: none !important; */
         }
     </style>
 </head>
 
-<body>
-    <div id="player">
-        <video src="1.mp4" muted autoplay></video>
-        <div id="btns"></div>
-    </div>
+<body style="position: relative;">
+    <div id="player"></div>
+
     <script>
-        const player = document.querySelector('video')
-        player.play()
-        const container = document.querySelector('#btns')
-        const btn1 = document.createElement("div")
-        btn1.innerHTML = 'Тыркни';
-        btn1.classList.add(...['btn', 'btn_first'])
-        const btn2 = document.createElement("div")
-        btn2.classList.add(...['btn', 'btn_second'])
-        btn2.innerHTML = 'Щёлкни';
-        console.log(player.currentTime)
-        player.addEventListener('timeupdate', () => {
-            const currentTime = Math.round(player.currentTime)
-            console.log(currentTime)
-            if (currentTime >= 4 && currentTime <= 10) {
-                // player.pause()
-                container.appendChild(btn1)
-                container.appendChild(btn2)
-                if (currentTime == 10) {
-                    btn1.remove()
-                    btn2.remove()
-                    player.currentTime = 142
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
 
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'M7lc1UVf-VE',
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 0,
+                    'rel': 0,
+                    'modestbranding': 1,
+                    'showinfo': 0
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
-                // setTimeout(() => {
-                //     player.currentTime = 50
-                //     btn1.remove()
-                //     btn2.remove()
-                //     player.play()
-                // }, 3000);
+            });
+        }
+
+        function onPlayerReady(event) {
+            player.playVideo()
+        }
+
+        var done = false;
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(pauseVideo, 6000);
+                done = true;
             }
-            if (currentTime == 156) {
-                player.currentTime = 4
-            }
+        }
 
 
-        });
-        btn1.addEventListener('click', () => {
-            player.currentTime = 50
-            player.play()
-            btn1.remove()
-            btn2.remove()
 
-        })
-        btn2.addEventListener('click', () => {
-            player.currentTime = 150
+        function pauseVideo() {
+            const body = document.getElementsByTagName('body')
+            const btn1 = document.createElement("button")
+            btn1.innerHTML = 'Тыркни';
+            btn1.classList.add('btn_first')
+            const btn2 = document.createElement("button")
+            btn2.classList.add('btn_second')
+            btn2.innerHTML = 'Щёлкни';
+            document.body.appendChild(btn1)
+            document.body.appendChild(btn2)
+            player.pauseVideo()
+                // player.seekTo(15)
+            btn1.addEventListener('click', () => {
+                player.seekTo(50)
+                player.playVideo()
+                btn1.remove()
+                btn2.remove()
 
-            player.play()
-            btn1.remove()
-            btn2.remove()
+            })
+            btn2.addEventListener('click', () => {
+                player.seekTo(150)
+                player.playVideo()
+                btn1.remove()
+                btn2.remove()
 
-        })
+            })
+        }
     </script>
 </body>
 
