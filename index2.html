@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+        }
+        
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        #btns {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        
+        .btn_first {
+            /* position: absolute; */
+            top: 50%;
+            left: 40%;
+            background-color: #4CAF50;
+            /* Green */
+        }
+        
+        .btn_second {
+            /* position: absolute; */
+            top: 50%;
+            right: 40%;
+            background-color: red;
+        }
+        
+        #player {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="player">
+        <video src="1.mp4" muted autoplay></video>
+        <div id="btns"></div>
+    </div>
+    <script>
+        const player = document.querySelector('video')
+        player.play()
+        const container = document.querySelector('#btns')
+        const btn1 = document.createElement("div")
+        btn1.innerHTML = 'Тыркни';
+        btn1.classList.add(...['btn', 'btn_first'])
+        const btn2 = document.createElement("div")
+        btn2.classList.add(...['btn', 'btn_second'])
+        btn2.innerHTML = 'Щёлкни';
+        console.log(player.currentTime)
+        player.addEventListener('timeupdate', () => {
+            const currentTime = Math.round(player.currentTime)
+            console.log(currentTime)
+            if (currentTime >= 4 && currentTime <= 10) {
+                // player.pause()
+                container.appendChild(btn1)
+                container.appendChild(btn2)
+                if (currentTime == 10) {
+                    btn1.remove()
+                    btn2.remove()
+                    player.currentTime = 142
+
+                }
+                // setTimeout(() => {
+                //     player.currentTime = 50
+                //     btn1.remove()
+                //     btn2.remove()
+                //     player.play()
+                // }, 3000);
+            }
+            if (currentTime == 156) {
+                player.currentTime = 4
+            }
+
+
+        });
+        btn1.addEventListener('click', () => {
+            player.currentTime = 50
+            player.play()
+            btn1.remove()
+            btn2.remove()
+
+        })
+        btn2.addEventListener('click', () => {
+            player.currentTime = 150
+
+            player.play()
+            btn1.remove()
+            btn2.remove()
+
+        })
+    </script>
+</body>
+
+</html>

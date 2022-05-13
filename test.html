@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <style>
+        .first {
+            font-size: 30px !important;
+            width: 50% !important;
+            background: black !important;
+        }
+        
+        .second {
+            width: 50% !important;
+            font-size: 30px !important;
+            background: black !important;
+        }
+        
+        .ytp-chrome-top {
+            display: none !important;
+        }
+        
+        #yes {
+            display: none;
+        }
+        
+        #no {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <video id="vid1" class="video-js vjs-default-skin" width="640" height="264" data-setup='{ "controls": false, "autoplay": false, "preload": "auto" ,"techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'>
+    <div id='yes'>Верно</div>
+    <div id='no'>Верно</div>
+  </video>
+
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+    <script src="youtube.min.js"></script>
+
+    <script>
+        const player = videojs('vid1');
+        player.play()
+        const test = document.createElement('div')
+        test.classList.add('test')
+        const button1 = document.createElement('button');
+        button1.innerHTML = 'Первый Выбор'; // -> button elemen
+        button1.classList.add('first')
+        const button2 = document.createElement('button');
+        button2.innerHTML = 'Второй Выбор'; // -> button elemen
+        button2.classList.add('second')
+        test.appendChild(button1)
+        test.appendChild(button2)
+
+        console.log(test)
+        var timeCheck = function() {
+            if (player.currentTime() > 2) {
+                player.off('timeupdate', timeCheck);
+                player.trigger('played50Second');
+            }
+        };
+
+        player.on('played50Second', function() {
+            const myButton = player.addChild('button')
+            myButton.el_.classList.add('first')
+            myButton.el_.innerHTML = 'First'
+            const myButton2 = player.addChild('button')
+            myButton2.el_.classList.add('second')
+            myButton2.el_.innerHTML = 'Second'
+            player.addChild(myButton);
+            player.addChild(myButton2);
+            myButton.one('click', () => {
+                player.currentTime(200)
+                player.play()
+                player.removeChild(myButton)
+                player.removeChild(myButton2)
+
+            })
+
+            myButton2.one('click', () => {
+                player.currentTime(50)
+                player.play()
+                player.removeChild(myButton)
+                player.removeChild(myButton2)
+
+            })
+            player.pause()
+        });
+        player.on('timeupdate', timeCheck);
+    </script>
+    <style>
+        .ytp-chrome-top {
+            display: none !important;
+        }
+    </style>
+</body>
+
+</html>

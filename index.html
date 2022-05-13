@@ -1,829 +1,102 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Реабилитационный центр 3 кита</title>
-    <meta name="description" content="ЛЕЧЕНИЕ НАРКОМАНИИ, АЛКОГОЛИЗМА И ИГРОМАНИИ В Г. СОЧИ">
-    <meta name="author" content="3 кита">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="/images/333.png" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn_first {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+        }
+        
+        .btn_second {
+            position: absolute;
+            top: 50%;
+            right: 55%;
+        }
+        
+        #player {
+            /* pointer-events: none !important; */
+        }
+    </style>
 </head>
 
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
-            </a>
-            <div><a style="text-align: center; color: white; text-decoration: underline; font-weight: bold;" href="tel:+79002759941">+79002759941</a></div>
-        </div>
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3 class="white">Навигация</h3>
-
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll" href="#home" title="home">Домой</a></li>
-                    <li><a class="smoothscroll" href="#about" title="about">О нас</a></li>
-                    <li><a class="smoothscroll" href="#what" title="services">Услуги</a></li>
-                    <li><a class="smoothscroll" href="#services" title="works">Помощь</a></li>
-                    <li><a class="smoothscroll" href="#works" title="clients">Галерея</a></li>
-                    <li><a class="smoothscroll" href="#clients" title="clients">Сертификаты</a></li>
-                    <li><a class="smoothscroll" href="#contact" title="contact">Контакты</a></li>
-                </ul>
-
-                <!-- <p>placeholder</p> -->
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="tel:+79002759941"><i class="fa fa-phone"></i><span>Phone</span></a>
-                    </li>
-                    <li>
-                        <a href="whatsapp://send?phone=+79002759941"><i class="fa fa-whatsapp"></i><span>Whatapp</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:tri-kita.rehab@mail.ru"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
-                    </li>
-                    <!-- <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </li> -->
-                </ul>
-
-            </div>
-            <!-- end header-nav__content -->
-
-        </nav>
-        <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text white">Меню</span>
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header>
-    <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h3 class="white">Реабилитационный центр</h3>
-                <h2 style="font-weight: bold;" class="white">Три кита</h2>
-
-                <h1 class="white">ЛЕЧЕНИЕ НАРКОМАНИИ, АЛКОГОЛИЗМА И ИГРОМАНИИ В Г. СОЧИ</h1>
-                <p class="white"> <br> Реабилитационный центр для людей страдающих синдромом зависимости и созависимости <br> Срочная помощь специалистов наркологов при проблемах с зависимостью: наркомания, алкоголизм, игромания, созависимость. Реабилитация в комфортных
-                    условиях в городе Сочи. Полный курс реабилитационных процедур.</p>
-
-
-
-                <!-- <div class="home-content__buttons">
-                    <a href="#contact" class="smoothscroll btn btn--stroke">
-                        Start a Project
-                    </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Us
-                    </a>
-                </div> -->
-
-            </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Листать вниз</span>
-                </a>
-            </div>
-
-            <div class="home-content__line"></div>
-
-        </div>
-        <!-- end home-content -->
-
-
-        <ul class="home-social">
-            <li>
-                <a href="tel:+79002759941"><i class="fa fa-phone"></i><span>Phone</span></a>
-            </li>
-            <li>
-                <a href="whatsapp://send?phone=+79002759941"><i class="fa fa-whatsapp"></i><span>Whatapp</span></a>
-            </li>
-            <li>
-                <a href="mailto:tri-kita.rehab@mail.ru"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
-            </li>
-            <!--   <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li> -->
-        </ul>
-        <!-- end home-social -->
-
-    </section>
-    <!-- end s-home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h1 class="display-2 ">НАЧАЛО! ЦЕЛЬ! ЛИЧНОСТЬ!</h1>
-                <h2 class="subhead subhead--dark">ТРИ КИТА ВЫЗДОРОВЛЕНИЯ ОТ ЗАВИСИМОСТИ</h2>
-            </div>
-        </div>
-        <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                    Опытный и квалифицированный персонал реабилитационного центра «Три Кита» в городе Сочи состоит только из дипломированных специалистов. Они регулярно следят за появлением современных тенденций в сфере анонимного лечения наркомании и алкоголизма. Мы применяем
-                    индивидуальный подход к реабилитационному процессу для каждого отдельного пациента, а после этого закрепляем эффект с помощью применения реабилитационной программы. Такой специализированный подход обеспечивает высокие показатели выздоровления
-                    и устранению опасной тяги к веществам на всю оставшуюся здоровую жизнь.
-                </p>
-            </div>
-        </div>
-        <!-- end about-desc -->
-
-        <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-
-            <div class="col-block stats__col ">
-                <div class="stats__count">127</div>
-                <h5>Awards Received</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">1505</div>
-                <h5>Cups of Coffee</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">109</div>
-                <h5>Projects Completed</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">102</div>
-                <h5>Happy Clients</h5>
-            </div>
-
-        </div> -->
-        <!-- end about-stats -->
-
-        <div class="about__line"></div>
-
-    </section>
-    <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id='what' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <!-- <h3 class="subhead">What We Do</h3> -->
-                <h1 class="display-2 display-2--light">РЕАБИЛИТАЦИОННЫЙ ЦЕНТР “ТРИ КИТА”</h1>
-            </div>
-        </div>
-        <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <img src="./images/1.png" class="image_icon"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2 h2--light center">ОПЫТНЫЕ СПЕЦИАЛИСТЫ</h3>
-                    <img src="./images/spec.svg" alt='image' />
-                    <p class="white center">Все наши сотрудники имеют профильное образование и большой опыт в лечении наркомании и алкоголизма
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <img src="./images/2.png" class="image_icon"></i>
-
-                </div>
-                <div class="service-text">
-                    <h3 class="h2 h2--light center">ТОЧНАЯ ДИАГНОСТИКА</h3>
-                    <img src="./images/diag.svg" alt='image' />
-                    <p class="white center">Перед началом курса реабилитации мы тщательно обследуем всех поступающих к нам пациентов
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <img src="./images/4.png" class="image_icon"></i>
-
-                </div>
-                <div class="service-text">
-                    <h3 class="h2 center h2--light center">ДЕТОКСИКАЦИЯ ОРГАНИЗМА</h3>
-                    <img src="./images/detox.svg" alt='image' />
-                    <p class="white center">Так же, в начале мы очищаем организм человека от последствий употребления алкоголя или наркотиков
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <img src="./images/6.png" class="image_icon"></i>
-
-                </div>
-                <div class="service-text">
-                    <h3 class="h2 h2--light center">КОМФОРТНЫЕ УСЛОВИЯ</h3>
-                    <img src="./images/comfort.svg" alt='image' />
-                    <p class="white center">У нас созданы комфортные и безопасные условия для полноценного прохождения курса реабилитации
-                    </p>
-                </div>
-            </div>
-
-
-
-        </div>
-        <!-- end services-list -->
-
-    </section>
-    <!-- end s-services -->
-
-    <section id='services' class="s-what" style="text-align: center;">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <!-- <h3 class="subhead">What We Do</h3> -->
-                <h1 data-aos="fade-up" class="display-2">С чем мы помогаем</h1>
-            </div>
-        </div>
-        <!-- end section-header -->
-
-        <div data-aos="fade-up" class="row services-list block-1-2 block-tab-full">
-
-            <h3>Алкоголизм</h3>
-
-            <p>Наше общество обреченное на страдание от алкоголизма, так как это вещество укоренилось в нашей культуре. МЫ ВАМ ПОМОЖЕМ.<br>У нас многолетний опыт работы с зависимыми-алкоголиками. Уже не одна сотня семей спасены и возвращённых нами в общество
-                и в счастливую жизнь. Мы работаем по миниссотской модели реабилитации, подробно о ней вы можете узнать у наших специалистов позвонив по указанным в анкетах и контактах номерах. Также наши специалисты составляют эксклюзивные, индивидуальные
-                программы коррекционного, диагностического и мотивационного характера, где мы гарантируем вам и вашим близким результат. Главный результат в работе с алкоголиками и наркоманами-это трезвость.</p>
-            <h3>Наркомания</h3>
-
-            <p>Мировое сообщество приняло факт того, что наркомания одна из основных проблем нашего времени. Специалисты в этой сфере разработали ряд эффективных программ для восстановления, профилактики и возвращения наркоманов в нормальное общество. Наша
-                клиника и квалифицированный коллектив, помогут вам и вашим близким обрести счастливую и качественную жизнь. Мы примиряем программы одобренные утверждённые Министерством здравоохранения Российской Федерации, а также программы признанные
-                мировым сообществом. Мы готовы помочь вам, а вы готовы сделать шаг и остановить гибель дорого вам человека?</p>
-            <h3>Игромания</h3>
-
-            <p>Поскольку игромания официально получила статус психического заболевания и входит в список психических расстройств, то лечение игромании и лечение игровой зависимости – это очень сложный процесс. Игромания – это прогрессирующая психическая
-                болезнь, пагубно влияющая на физическое, психологическое, духовное состояние человека, на здоровье человека и социальное положение. Чтобы избавиться от игровой зависимости и добиться положительного результата, необходим комплексный подход
-                и реабилитация в специализированном центре, который вы можете получить у нас. Мы разработали эксклюзивную программу для работы с игроманами, которая показывает наивысшие результаты.</p>
-            <h3>Созависимость</h3>
-
-            <p>Одним из самых распространённых видов психического расстройства является зависимость от других людей-созависимость. Одним из основных направлений нашего психологического центра является работа с этим видом расстройства. Информацию об этом
-                виде зависимости вы можете узнать позвонив или заказав обратный звонок от наших специалистов. Лучшая в регионе программа по работе с этим видом зависимости представлена нашими специалистами, эксклюзивно в нашей клинике.</p>
-            <h3>Помощь в домашних условиях </h3>
-
-            <p>В некоторых случаях без госпитализации пациента обойтись невозможно, но чаще квалифицированный специалист может оказать существенную помощь и в домашних условиях. Осложняется ситуация тем, что зависимые люди не всегда хотят признавать проблему,
-                считая, что способны самостоятельно контролировать происходящее, а также скрывая свое состояние. Поэтому, если ситуация с приемом алкоголя или наркотиков вышла из-под контроля и поведение зависимого пугает или просто беспокоит его самого
-                и близких, то вы можете обратиться к нам и наш квалифицированный специалист выедет к вам на дом , оценит всю сложившуюся ситуацию и начнёт работу с вашим близким человеком незамедлительно , за более подробной информацией вы можете обратиться
-                по телефону к нашим специалистам.</p>
-            <h3>Почему надо принимать меры</h3>
-
-            <p>Алкоголизм и наркомания относятся к той категории заболеваний, лечить которые нужно срочно. И чем раньше вы приступите, тем будет лучше. Не обратившись за помощью к специалисту, болезнь начнет прогрессировать, и станет причиной многих серьезнейших
-
-
-                <br> проблем. Ведь потом последствия могут быть очень серьезными.
-                <b <br> Обратившись в реабилитационный центр “Три Кита” у человека появляется уникальный шанс, избавиться от порабощающих его психотропных веществ и начать жить по-новому, трезвой и счастливой жизнью. Путь к ремиссии длиною в жизнь
-      ,          очень
-                            сложен и требует очень много времени и сил. Только совместно с семьей и близкими, ну и конечно-же совместно с профессионалами, можно преодолеть наркоманию и алкоголизм.</p>
-            <p style="text-align: center; font-weight: bold;">Мы поможем даже в самых тяжелых случаях! Не откладывайте обращение на завтра, позвоните прямо сейчас. Мы проконсультируем Вас по Вашей проблеме совершенно бесплатно.</p>
-            <!-- <div class="home-content__buttons">
-                <a href="#contact" class="smoothscroll btn btn--stroke">
-                    Start a Project
-                </a>
-                <a href="#about" class="smoothscroll btn btn--stroke">
-                    More About Us
-                </a>
-            </div> -->
-        </div>
-        <!-- end services-list -->
-
-    </section>
-
-    <!-- works
-    ================================================== -->
-    <section id='works' class="s-works">
-
-        <div class="intro-wrap">
-
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-                <div class="col-full">
-                    <h1 class="display-2 display-2--light">Фото</h1>
-                    <h3 class="subhead">Реабилитационного центра</h3>
-                </div>
-            </div>
-            <!-- end section-header -->
-
-        </div>
-        <!-- end intro-wrap -->
-
-        <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry">
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center1.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center1.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Shutterbug
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center2.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center2.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Woodcraft
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center3.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center3.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    The Beetle
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Development
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center4.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center4.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Grow Green
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center5.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center5.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Guitarist
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center6.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center6.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Palmeira
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center7.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center7.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                              <h3 class="item-folio__title">
-                                  Palmeira
-                              </h3>
-                              <p class="item-folio__cat">
-                                  Web Design
-                              </p>
-                          </div>
-
-                          <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                              <i class="icon-link"></i>
-                          </a>
-
-                          <div class="item-folio__caption">
-                              <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                          </div> -->
-
-                        </div>
-                    </div>
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/center/center8.png" class="thumb-link" data-size="1050x700">
-                                    <img src="images/center/center8.png">
-                                </a>
-                            </div>
-
-                            <!-- <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Palmeira
-                            </h3>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            <i class="icon-link"></i>
-                        </a>
-
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div> -->
-
-                        </div>
-                    </div>
-                    <!-- end masonry__brick -->
-
-                </div>
-                <!-- end masonry -->
-            </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/s_MeShkaFYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- end col-full -->
-        </div>
-        <!-- end works-content -->
-
-    </section>
-    <!-- end s-works -->
-
-
-    <!-- clients
-    ================================================== -->
-    <section id="clients" class="s-clients">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h1 class="display-2">Наши сертификаты и дипломы</h1>
-                <!-- <h3 class="subhead">и дипломы</h3> -->
-            </div>
-        </div>
-        <!-- end section-header -->
-
-        <div class="row clients-outer" data-aos="fade-up">
-            <div class="col-full">
-                <div class="clients">
-
-                  <div class="clients__slide"><img src="images/sert/sert8.jpg" /></div>
-                  <div class="clients__slide"><img src="images/sert/sert9.jpg" /></div>
-                  <div class="clients__slide"><img src="images/sert/sert10.jpg" /></div>
-                  <div class="clients__slide"><img src="images/sert/sert12.jpg" /></div>
-                  <div class="clients__slide"><img src="images/sert/sert13.jpg" /></div>
-
-                    <div class="clients__slide"><img src="images/sert/sert1.png" /></div>
-                    <div class="clients__slide"><img src="images/sert/sert2.png" /></div>
-                    <div class="clients__slide"><img src="images/sert/sert3.png" /></div>
-                    <div class="clients__slide"><img src="images/sert/sert6.jpeg" /></div>
-                    <div class="clients__slide"><img src="images/sert/sert7.jpeg" /></div>
-                    <div class="clients__slide"><img src="images/sert/sert11.jpg" /></div>
-
-
-                </div>
-                <!-- end clients -->
-            </div>
-            <!-- end col-full -->
-        </div>
-        <!-- end clients-outer -->
-
-        <!-- <div class="row clients-testimonials" data-aos="fade-up">
-          <h2 class="display-3">Наши специалисты оказывающие помощь на дому.</h2>
-            <div class="col-full">
-                <div class="testimonials">
-
-                    <div class="testimonials__slide">
-
-                      <img src="images/5.png" alt="Author image" class="testimonials__avatar">
-                      <p>Старший консультант, руководитель пост-лечебной программы.</p>
-                        
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Георгий Игоревич</span>
-                            <a href="tel:+79188343030"><span class="testimonials__pos">+79188343030</span></a>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-                      
-                      <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>Психолого-социальный работник, специалист по созависимости</p>
-
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Гагик Артурович</span>
-                            <a href="tel:+79186090704"><span class="testimonials__pos">+79186090704</span></a>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-         
-
-            </div>
-      
-        </div> -->
-        <!-- end client-testimonials -->
-
-    </section>
-    <!-- end s-clients -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Наши контакты</h3>
-            </div>
-        </div>
-
-        <div class="row contact-content" data-aos="fade-up">
-
-          
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <div class="cinfo">
-                        <h5>Электронная почта</h5>
-                        <p  class="white">
-                        <a  class="white"  href="mailto:tri-kita.rehab@mail.ru">tri-kita.rehab@mail.ru</a>  
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Наши телефоны</h5>
-                        <p  class="white">
-                            Основной: <a  class="white" href="tel:+79002759941">+79002759941</a><br> Старший консультант:  <a  class="white"  href="tel:+79188343030">+79188343030</a><br> Соц.работник :  <a  class="white"  href="tel:+79186090704">+79186090704</a>
-                        </p>
-                    </div>
-
-                    <ul class="contact-social">
-                      <li>
-                        <a href="tel:+79002759941"><i class="fa fa-phone"></i><span>Phone</span></a>
-                    </li>
-                    <li>
-                        <a href="whatsapp://send?phone=+79002759941"><i class="fa fa-whatsapp"></i><span>Whatapp</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:tri-kita.rehab@mail.ru"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
-                    </li>
-                    </ul>
-                    <!-- end contact-social -->
-
-                </div>
-                <!-- end contact-info -->
-            </div>
-            <!-- end contact-secondary -->
-
-        </div>
-        <!-- end contact-content -->
-
-    </section>
-    <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- end photoSwipe background -->
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Java Script
-    ================================================== -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+<body style="position: relative;">
+    <div id="player"></div>
+
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'M7lc1UVf-VE',
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 0,
+                    'rel': 0,
+                    'modestbranding': 1,
+                    'showinfo': 0
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            player.playVideo()
+        }
+
+        var done = false;
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(pauseVideo, 6000);
+                done = true;
+            }
+        }
+
+
+
+        function pauseVideo() {
+            const body = document.getElementsByTagName('body')
+            const btn1 = document.createElement("button")
+            btn1.innerHTML = 'Тыркни';
+            btn1.classList.add('btn_first')
+            const btn2 = document.createElement("button")
+            btn2.classList.add('btn_second')
+            btn2.innerHTML = 'Щёлкни';
+            document.body.appendChild(btn1)
+            document.body.appendChild(btn2)
+            player.pauseVideo()
+                // player.seekTo(15)
+            btn1.addEventListener('click', () => {
+                player.seekTo(50)
+                player.playVideo()
+                btn1.remove()
+                btn2.remove()
+
+            })
+            btn2.addEventListener('click', () => {
+                player.seekTo(150)
+                player.playVideo()
+                btn1.remove()
+                btn2.remove()
+
+            })
+        }
+    </script>
 </body>
+
 </html>
